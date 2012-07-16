@@ -1,6 +1,6 @@
 <?php
 
-require_once '../classes/Set.php';
+require_once 'src/Set.php';
 require_once 'PHPUnit/Framework/TestCase.php';
 
 class SetTest extends PHPUnit_Framework_TestCase {
