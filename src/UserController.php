@@ -70,7 +70,7 @@ class UserController {
 
 		}
 
-		$db        = new PDO('sqlite::memory:');
+		$db        = new PDO(Configuration::get('DSN'));
 		$statement = $db->prepare('SELECT * FROM Users WHERE email =:email;');
 
 		$statement->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
