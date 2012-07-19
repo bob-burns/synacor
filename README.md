@@ -1,2 +1,2 @@
-synacor-cakephp-test
+synacor
 ====================
