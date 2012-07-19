@@ -1,7 +1,7 @@
 <?php
 
-require_once 'src/Set.php';
-require_once 'PHPUnit/Framework/TestCase.php';
+require_once dirname(__FILE__) . '/../src/Set.php';
+require_once 'PHPUnit/Autoload.php';
 
 class SetTest extends PHPUnit_Framework_TestCase {
 

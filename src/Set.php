@@ -1,8 +1,17 @@
 <?php
 
+/**
+ * Class for dealing with sets of data
+ */
 class Set {
 
-	public static function expand($data, $separator = '.') {
+	/**
+	 * @static
+	 * @param   array     $data
+	 * @param   string    $separator
+	 * @return  array
+	 */
+	public static function expand(array $data, $separator = '.') {
 
 		$result = array();
 
@@ -32,6 +41,12 @@ class Set {
 
 	}
 
+	/**
+	 * @static
+	 * @param   array   $data
+	 * @param   string  $separator
+	 * @return  array
+	 */
 	public static function flatten(array $data, $separator = '.') {
 
 		$result = array();
@@ -76,6 +91,10 @@ class Set {
 
 	}
 
+	/**
+	 * @static
+	 * @return array
+	 */
 	public static function merge() {
 
 		$args   = func_get_args();
